@@ -1,0 +1,4 @@
+services:
+#    problem.example:
+#        class: ProblemBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

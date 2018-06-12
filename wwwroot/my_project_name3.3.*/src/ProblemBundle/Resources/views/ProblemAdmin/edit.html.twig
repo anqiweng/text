@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    {% if problem.id %}
+        {{ problem.title }} - 编辑题目
+    {% else %}
+        新建题目
+    {% endif %}
+{% endblock %}
+{% block content %}
+    <div class="ui main text container">
+        {{ form(form) }}
+    </div>
+{% endblock %}
+
+
+{% block pre_scripts %}
+    <script>
+        _globals.sampleTestcasesCount = parseInt('{{ form.sampleTestcases|length }}');
+    </script>
+{% endblock %}

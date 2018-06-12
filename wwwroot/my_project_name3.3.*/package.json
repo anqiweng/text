@@ -1,0 +1,58 @@
+{
+  "name": "liudanlite",
+  "description": "A Vue.js project",
+  "version": "0.0.1",
+  "author": "Liudan Dev",
+  "license": "AGPL-3.0",
+  "private": true,
+  "scripts": {
+    "__disabled_dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build-dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "lint": "eslint --ext .js,.vue app/Resources/",
+    "start": "webpack-dev-server --hot",
+    "lint-fix": "eslint --ext .js,.vue --fix app/Resources/"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "semantic-ui": "^2.3.1",
+    "vue": "^2.5.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "tests"
+  }
+}

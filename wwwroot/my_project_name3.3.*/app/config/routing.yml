@@ -1,0 +1,28 @@
+liudanlite_problem:
+    resource: "@ProblemBundle/Controller/ProblemController.php"
+    type:     annotation
+    prefix:   /problem
+
+liudanlite_user:
+    resource: "@UserBundle/Controller/UserController.php"
+    type:     annotation
+    prefix:   /user
+
+liudanlite_homepage:
+    resource: "@HomePageBundle/Controller/HomePageController.php"
+    type:     annotation
+    prefix:   /
+
+liudanlite_fos_authentication:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    prefix:   /authentication
+
+liudanlite_admin_problem:
+    resource: "@ProblemBundle/Controller/ProblemAdminController.php"
+    type:     annotation
+    prefix:   /admin/problem
+
+luogulite_api_problem:
+    resource: "@ProblemBundle/Controller/ProblemAPIController.php"
+    type:     annotation
+    prefix:   /api/problem
